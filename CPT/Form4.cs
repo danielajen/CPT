@@ -16,5 +16,15 @@ namespace CPT
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            textBox4.Visible = true;
+            label5.Visible = true;
+            textBox5.Visible = true;
+            label6.Visible = true;
+            textBox6.Visible = true;
+        }
     }
 }
