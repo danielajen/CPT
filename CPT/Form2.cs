@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace CPT
 {
@@ -32,6 +33,38 @@ namespace CPT
             RULES1 Rules = new RULES1();
             Rules.Show();
             this.Hide();
+        }
+
+        private void btnStart1_Click(object sender, EventArgs e)
+        {
+            pbB1.Location = new Point(253, 12);
+            for (int y = 5; y < 340; y = y + 5)
+            {
+                pbB1.Location = new Point(253, y);
+                this.Update();
+                Thread.Sleep(50);
+            }
+            pbB2.Location = new Point(334, 12);
+            for (int y = 5; y < 340; y = y + 5)
+            {
+                pbB2.Location = new Point(334, y);
+                this.Update();
+                Thread.Sleep(50);
+            }
+            pbB3.Location = new Point(411, 12);
+            for (int y = 5; y < 340; y = y + 5)
+            {
+                pbB3.Location = new Point(411, y);
+                this.Update();
+                Thread.Sleep(50);
+            }
+            pbB4.Location = new Point(288, 392);
+            for (int y = 5; y < 340; y = y - 5)
+            {
+                pbB4.Location = new Point(288, y);
+                this.Update();
+                Thread.Sleep(50);
+            }
         }
 
         private void bombs1(object sender, EventArgs e)

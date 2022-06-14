@@ -141,6 +141,8 @@ namespace CPT
             // pbGame3
             // 
             this.pbGame3.BackColor = System.Drawing.Color.Red;
+            this.pbGame3.BackgroundImage = global::CPT.Properties.Resources.guess;
+            this.pbGame3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbGame3.Location = new System.Drawing.Point(567, 129);
             this.pbGame3.Name = "pbGame3";
             this.pbGame3.Size = new System.Drawing.Size(178, 155);

@@ -125,6 +125,7 @@ namespace CPT
             this.btnStart1.TabIndex = 6;
             this.btnStart1.Text = "START";
             this.btnStart1.UseVisualStyleBackColor = false;
+            this.btnStart1.Click += new System.EventHandler(this.btnStart1_Click);
             // 
             // pbB4
             // 
