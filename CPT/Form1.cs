@@ -40,7 +40,7 @@ namespace CPT
 
         private void pbGame1_Click(object sender, EventArgs e)
         {
-            Form2 game1 = new Form2(l1,l2, l3);
+            Form2 game1 = new Form2(l1, l2, l3);
             game1.Show();
             this.Hide();
         }

@@ -16,7 +16,7 @@ namespace CPT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(false, false, false));
+            Application.Run(new Form2(false, false, false));
         }
     }
 }

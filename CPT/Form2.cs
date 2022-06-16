@@ -37,34 +37,44 @@ namespace CPT
 
         private void btnStart1_Click(object sender, EventArgs e)
         {
-            pbB1.Location = new Point(253, 12);
-            for (int y = 5; y < 340; y = y + 5)
-            {
-                pbB1.Location = new Point(253, y);
-                this.Update();
-                Thread.Sleep(50);
-            }
-            pbB2.Location = new Point(334, 12);
-            for (int y = 5; y < 340; y = y + 5)
-            {
-                pbB2.Location = new Point(334, y);
-                this.Update();
-                Thread.Sleep(50);
-            }
-            pbB3.Location = new Point(411, 12);
-            for (int y = 5; y < 340; y = y + 5)
-            {
-                pbB3.Location = new Point(411, y);
-                this.Update();
-                Thread.Sleep(50);
-            }
-            pbB4.Location = new Point(288, 392);
-            for (int y = 5; y < 340; y = y - 5)
-            {
-                pbB4.Location = new Point(288, y);
-                this.Update();
-                Thread.Sleep(50);
-            }
+           timer1.Start();
+           timer2.Start();
+           timer3.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            pbB1.Location = new Point(pbB1.Location.X, pbB1.Location.Y + 5);
+            if (pbB1.Location.Y > 450) pbB1.Location = new Point(pbB1.Location.X, -10);
+            pbB3.Location = new Point(pbB3.Location.X, pbB3.Location.Y + 5);
+            if (pbB3.Location.Y > 450) pbB3.Location = new Point(pbB3.Location.X, -10);
+            pbB5.Location = new Point(pbB5.Location.X, pbB5.Location.Y - 5);
+            if (pbB5.Location.Y < -50) pbB5.Location = new Point(pbB5.Location.X, 380);
+            pbB6.Location = new Point(pbB6.Location.X, pbB6.Location.Y + 5);
+            if (pbB6.Location.Y > 450) pbB6.Location = new Point(pbB6.Location.X, -10);
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            pbB2.Location = new Point(pbB2.Location.X, pbB2.Location.Y + 5);
+            if (pbB2.Location.Y > 450) pbB2.Location = new Point(pbB2.Location.X, -10);
+            pbB4.Location = new Point(pbB4.Location.X, pbB4.Location.Y - 5);
+            if (pbB4.Location.Y < -50) pbB4.Location = new Point(pbB4.Location.X, 380); 
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            pbB7.Location = new Point(pbB7.Location.X, pbB7.Location.Y + 5);
+            if (pbB7.Location.Y > 450) pbB7.Location = new Point(pbB7.Location.X, -10);
+            pbB8.Location = new Point(pbB8.Location.X, pbB8.Location.Y - 5);
+            if (pbB8.Location.Y < -50) pbB8.Location = new Point(pbB8.Location.X, 380);
+        }
+
+        private void Side_Enter(object sender, EventArgs e)
+        {
+            Point startingPoint = panel1.Location;
+            startingPoint.Offset(27, 211);
+            Cursor.Position = PointToScreen(startingPoint);
         }
 
         private void bombs1(object sender, EventArgs e)
@@ -79,7 +89,6 @@ namespace CPT
                 Start.Show();
                 this.Hide();
             }
-          
         }
 
         private void btnFinish1_Click(object sender, EventArgs e)
