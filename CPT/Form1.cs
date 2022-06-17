@@ -52,7 +52,7 @@ namespace CPT
 
         private void pbGame2_Click(object sender, EventArgs e)
         {
-            Form3 Game2 = new Form3();
+            Form3 Game2 = new Form3(l1, l2, l3);
             Game2.Show();
             this.Hide();
         }

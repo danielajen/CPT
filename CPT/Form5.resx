@@ -117,4 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>-Click start to begin the game. 
+-Make it across without getting hit by any of the bombs.
+-Be careful! hitting the walls of the maze will make you go back to the start.
+-You have 3 lives, avoid the bombs to maintain your lives. 
+-When finished, click on the finish sign. 
+-Once your done, you will be able to continue to level two. 
+
+</value>
+  </data>
 </root>

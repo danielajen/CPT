@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
+
 
 namespace CPT
 {
@@ -94,7 +94,7 @@ namespace CPT
         private void btnFinish1_Click(object sender, EventArgs e)
         {
             lock2 = true;
-            Form1 Start = new Form1(lock1, lock2,lock3);
+            Form1 Start = new Form1(lock1, lock2, lock3);
             Start.Show();
             this.Hide();
         }

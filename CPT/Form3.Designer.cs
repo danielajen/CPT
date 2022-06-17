@@ -29,6 +29,7 @@ namespace CPT
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -49,6 +50,9 @@ namespace CPT
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.btnStart2 = new System.Windows.Forms.Button();
             this.btnRules2 = new System.Windows.Forms.Button();
+            this.lblLives2 = new System.Windows.Forms.Label();
+            this.lblApples2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -89,7 +93,7 @@ namespace CPT
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
-            this.pictureBox1.Click += new System.EventHandler(this.Right_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.Orange_Click);
             // 
             // pictureBox2
             // 
@@ -100,7 +104,7 @@ namespace CPT
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
-            this.pictureBox2.Click += new System.EventHandler(this.Right_Click);
+            this.pictureBox2.Click += new System.EventHandler(this.Orange_Click);
             // 
             // pictureBox3
             // 
@@ -111,7 +115,7 @@ namespace CPT
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Visible = false;
-            this.pictureBox3.Click += new System.EventHandler(this.Right_Click);
+            this.pictureBox3.Click += new System.EventHandler(this.Orange_Click);
             // 
             // pictureBox4
             // 
@@ -122,7 +126,7 @@ namespace CPT
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Visible = false;
-            this.pictureBox4.Click += new System.EventHandler(this.Right_Click);
+            this.pictureBox4.Click += new System.EventHandler(this.Orange_Click);
             // 
             // pictureBox5
             // 
@@ -133,7 +137,7 @@ namespace CPT
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Visible = false;
-            this.pictureBox5.Click += new System.EventHandler(this.Right_Click);
+            this.pictureBox5.Click += new System.EventHandler(this.Orange_Click);
             // 
             // pictureBox6
             // 
@@ -144,7 +148,7 @@ namespace CPT
             this.pictureBox6.TabIndex = 6;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Visible = false;
-            this.pictureBox6.Click += new System.EventHandler(this.Right_Click);
+            this.pictureBox6.Click += new System.EventHandler(this.Orange_Click);
             // 
             // pictureBox7
             // 
@@ -155,7 +159,7 @@ namespace CPT
             this.pictureBox7.TabIndex = 7;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Visible = false;
-            this.pictureBox7.Click += new System.EventHandler(this.Right_Click);
+            this.pictureBox7.Click += new System.EventHandler(this.Orange_Click);
             // 
             // pictureBox8
             // 
@@ -295,12 +299,40 @@ namespace CPT
             this.btnRules2.UseVisualStyleBackColor = false;
             this.btnRules2.Click += new System.EventHandler(this.btnRules2_Click);
             // 
+            // lblLives2
+            // 
+            this.lblLives2.BackColor = System.Drawing.Color.Transparent;
+            this.lblLives2.Font = new System.Drawing.Font("Vineta BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLives2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lblLives2.Location = new System.Drawing.Point(316, 418);
+            this.lblLives2.Name = "lblLives2";
+            this.lblLives2.Size = new System.Drawing.Size(197, 23);
+            this.lblLives2.TabIndex = 20;
+            this.lblLives2.Text = "LIVES: 3";
+            // 
+            // lblApples2
+            // 
+            this.lblApples2.BackColor = System.Drawing.Color.Transparent;
+            this.lblApples2.Font = new System.Drawing.Font("Vineta BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApples2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblApples2.Location = new System.Drawing.Point(12, 152);
+            this.lblApples2.Name = "lblApples2";
+            this.lblApples2.Size = new System.Drawing.Size(197, 23);
+            this.lblApples2.TabIndex = 21;
+            this.lblApples2.Text = "Apples Found: ";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CPT.Properties.Resources.space_2;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblApples2);
+            this.Controls.Add(this.lblLives2);
             this.Controls.Add(this.btnRules2);
             this.Controls.Add(this.btnStart2);
             this.Controls.Add(this.pictureBox17);
@@ -369,5 +401,8 @@ namespace CPT
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Button btnStart2;
         private System.Windows.Forms.Button btnRules2;
+        private System.Windows.Forms.Label lblLives2;
+        private System.Windows.Forms.Label lblApples2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
