@@ -20,11 +20,16 @@ namespace CPT
         private void button1_Click(object sender, EventArgs e)
         {
             label1.Visible = true;
-            textBox4.Visible = true;
-            label5.Visible = true;
+            textBox7.Visible = true;
+            label7.Visible = true;
             textBox5.Visible = true;
-            label6.Visible = true;
-            textBox6.Visible = true;
+            label8.Visible = true;
+            textBox9.Visible = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
