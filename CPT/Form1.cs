@@ -43,6 +43,12 @@ namespace CPT
             Form2 game1 = new Form2(l1, l2, l3);
             game1.Show();
             this.Hide();
+
+        }
+
+        private void pbLock1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -55,6 +61,8 @@ namespace CPT
             Form3 Game2 = new Form3(l1, l2, l3);
             Game2.Show();
             this.Hide();
+
+
         }
     }
 }

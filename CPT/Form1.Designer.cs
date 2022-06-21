@@ -51,33 +51,36 @@ namespace CPT
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Vineta BT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(51, 287);
+            this.label1.Location = new System.Drawing.Point(76, 442);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 32);
+            this.label1.Size = new System.Drawing.Size(228, 49);
             this.label1.TabIndex = 3;
             this.label1.Text = "Level 1 ";
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Vineta BT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(317, 287);
+            this.label2.Location = new System.Drawing.Point(476, 442);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 32);
+            this.label2.Size = new System.Drawing.Size(228, 49);
             this.label2.TabIndex = 4;
             this.label2.Text = "Level 2";
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Vineta BT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(583, 287);
+            this.label3.Location = new System.Drawing.Point(874, 442);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 32);
+            this.label3.Size = new System.Drawing.Size(228, 49);
             this.label3.TabIndex = 5;
             this.label3.Text = "Level 3";
             // 
@@ -86,11 +89,12 @@ namespace CPT
             this.btnStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Swis721 BdCnOul BT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnStart.Location = new System.Drawing.Point(283, 365);
+            this.btnStart.Location = new System.Drawing.Point(424, 562);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(223, 46);
+            this.btnStart.Size = new System.Drawing.Size(334, 71);
             this.btnStart.TabIndex = 6;
             this.btnStart.Text = "START";
             this.btnStart.UseVisualStyleBackColor = false;
@@ -99,11 +103,12 @@ namespace CPT
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Swis721 BdCnOul BT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Purple;
-            this.label4.Location = new System.Drawing.Point(245, 20);
+            this.label4.Location = new System.Drawing.Point(368, 31);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(295, 57);
+            this.label4.Size = new System.Drawing.Size(442, 88);
             this.label4.TabIndex = 7;
             this.label4.Text = "SKILL GAMES";
             // 
@@ -111,9 +116,10 @@ namespace CPT
             // 
             this.pbLock3.BackgroundImage = global::CPT.Properties.Resources.lock2;
             this.pbLock3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbLock3.Location = new System.Drawing.Point(567, 129);
+            this.pbLock3.Location = new System.Drawing.Point(850, 198);
+            this.pbLock3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbLock3.Name = "pbLock3";
-            this.pbLock3.Size = new System.Drawing.Size(178, 155);
+            this.pbLock3.Size = new System.Drawing.Size(267, 238);
             this.pbLock3.TabIndex = 10;
             this.pbLock3.TabStop = false;
             this.pbLock3.Click += new System.EventHandler(this.pbLock3_Click);
@@ -122,9 +128,10 @@ namespace CPT
             // 
             this.pbLock2.BackgroundImage = global::CPT.Properties.Resources.lock3;
             this.pbLock2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbLock2.Location = new System.Drawing.Point(303, 129);
+            this.pbLock2.Location = new System.Drawing.Point(454, 198);
+            this.pbLock2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbLock2.Name = "pbLock2";
-            this.pbLock2.Size = new System.Drawing.Size(178, 155);
+            this.pbLock2.Size = new System.Drawing.Size(267, 238);
             this.pbLock2.TabIndex = 9;
             this.pbLock2.TabStop = false;
             // 
@@ -132,29 +139,33 @@ namespace CPT
             // 
             this.pbLock1.BackgroundImage = global::CPT.Properties.Resources._lock;
             this.pbLock1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbLock1.Location = new System.Drawing.Point(37, 129);
+            this.pbLock1.Location = new System.Drawing.Point(56, 198);
+            this.pbLock1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbLock1.Name = "pbLock1";
-            this.pbLock1.Size = new System.Drawing.Size(178, 155);
+            this.pbLock1.Size = new System.Drawing.Size(267, 238);
             this.pbLock1.TabIndex = 8;
             this.pbLock1.TabStop = false;
+            this.pbLock1.Click += new System.EventHandler(this.pbLock1_Click);
             // 
             // pbGame3
             // 
             this.pbGame3.BackColor = System.Drawing.Color.Red;
             this.pbGame3.BackgroundImage = global::CPT.Properties.Resources.guess;
             this.pbGame3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbGame3.Location = new System.Drawing.Point(567, 129);
+            this.pbGame3.Location = new System.Drawing.Point(850, 198);
+            this.pbGame3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbGame3.Name = "pbGame3";
-            this.pbGame3.Size = new System.Drawing.Size(178, 155);
+            this.pbGame3.Size = new System.Drawing.Size(267, 238);
             this.pbGame3.TabIndex = 2;
             this.pbGame3.TabStop = false;
             // 
             // pbGame2
             // 
             this.pbGame2.BackgroundImage = global::CPT.Properties.Resources.space_2;
-            this.pbGame2.Location = new System.Drawing.Point(303, 129);
+            this.pbGame2.Location = new System.Drawing.Point(454, 198);
+            this.pbGame2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbGame2.Name = "pbGame2";
-            this.pbGame2.Size = new System.Drawing.Size(178, 155);
+            this.pbGame2.Size = new System.Drawing.Size(267, 238);
             this.pbGame2.TabIndex = 1;
             this.pbGame2.TabStop = false;
             this.pbGame2.Click += new System.EventHandler(this.pbGame2_Click);
@@ -162,21 +173,22 @@ namespace CPT
             // pbGame1
             // 
             this.pbGame1.BackgroundImage = global::CPT.Properties.Resources.pixel_space;
-            this.pbGame1.Location = new System.Drawing.Point(37, 129);
+            this.pbGame1.Location = new System.Drawing.Point(56, 198);
+            this.pbGame1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbGame1.Name = "pbGame1";
-            this.pbGame1.Size = new System.Drawing.Size(178, 155);
+            this.pbGame1.Size = new System.Drawing.Size(267, 238);
             this.pbGame1.TabIndex = 0;
             this.pbGame1.TabStop = false;
             this.pbGame1.Click += new System.EventHandler(this.pbGame1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BackgroundImage = global::CPT.Properties.Resources.back;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(785, 445);
+            this.ClientSize = new System.Drawing.Size(1178, 685);
             this.Controls.Add(this.pbLock3);
             this.Controls.Add(this.pbLock2);
             this.Controls.Add(this.pbLock1);
@@ -188,6 +200,7 @@ namespace CPT
             this.Controls.Add(this.pbGame3);
             this.Controls.Add(this.pbGame2);
             this.Controls.Add(this.pbGame1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

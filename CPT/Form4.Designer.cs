@@ -52,18 +52,18 @@ namespace CPT
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(294, 77);
+            this.label2.Location = new System.Drawing.Point(315, 75);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(250, 26);
+            this.label2.Size = new System.Drawing.Size(232, 26);
             this.label2.TabIndex = 2;
-            this.label2.Text = " Name to Use on Drip";
+            this.label2.Text = "Best Clothing Brand";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(473, 143);
+            this.label3.Location = new System.Drawing.Point(481, 143);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 29);
@@ -115,8 +115,9 @@ namespace CPT
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(174, 85);
             this.button1.TabIndex = 15;
-            this.button1.Text = "Rules";
+            this.button1.Text = "Instructions";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form4
             // 
@@ -135,6 +136,7 @@ namespace CPT
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form4";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
